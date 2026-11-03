@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import zlib
 from dataclasses import dataclass, field
-from enum import StrEnum
+from enum import Enum
 from typing import Any
 
 
@@ -13,7 +13,7 @@ class ProtocolError(ValueError):
     """Raised when a packet cannot be trusted or understood."""
 
 
-class PacketType(StrEnum):
+class PacketType(str, Enum):
     HEALTH = "health"
     TELEMETRY = "telemetry"
     COMMAND = "command"
