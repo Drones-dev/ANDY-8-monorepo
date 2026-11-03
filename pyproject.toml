@@ -1,0 +1,5 @@
+[project]
+name = "andy8-ground-station"
+version = "0.1.0"
+description = "Ground-station telemetry view model for ANDY-8"
+requires-python = ">=3.10"
