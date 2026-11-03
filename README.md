@@ -16,6 +16,23 @@ The companion repository [ANDY-8-mesh-firmware](https://github.com/Drones-dev/AN
 
 Each node maintains a bounded neighbor table, a route table, a recently-seen packet cache, and relay health counters. The routing layer is transport-agnostic so it can be tested on a host and connected to firmware through an adapter.
 
+## Local layout
+
+```text
+include/andy8/routing.hpp   Public routing API and bounded state types
+src/routing.cpp             Route learning, forwarding, duplicate cache, and failure handling
+tests/routing_tests.cpp     Host tests for topology, TTL, duplicates, expiry, and rerouting
+docs/ARCHITECTURE.md        Design and integration notes
+```
+
+## Build and test
+
+```sh
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
 ## Planned milestones
 
 - [ ] Define routing and forwarding interfaces
