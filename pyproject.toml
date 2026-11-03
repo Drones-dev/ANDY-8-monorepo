@@ -1,0 +1,5 @@
+[project]
+name = "andy8-security"
+version = "0.1.0"
+description = "Identity and message-authentication helpers for ANDY-8"
+requires-python = ">=3.10"
