@@ -1,0 +1,8 @@
+[project]
+name = "andy8-protocol"
+version = "0.1.0"
+description = "Shared packet formats and validation for the ANDY-8 mesh"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
