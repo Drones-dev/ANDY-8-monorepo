@@ -1,0 +1,5 @@
+[project]
+name = "andy8-monitoring"
+version = "0.1.0"
+description = "Metrics and alerts for ANDY-8 operations"
+requires-python = ">=3.10"
