@@ -1,0 +1,5 @@
+[project]
+name = "andy8-test-lab"
+version = "0.1.0"
+description = "Integration test result model for ANDY-8"
+requires-python = ">=3.10"
