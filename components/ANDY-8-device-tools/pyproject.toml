@@ -1,0 +1,5 @@
+[project]
+name = "andy8-device-tools"
+version = "0.1.0"
+description = "Provisioning and diagnostics tools for ANDY-8 nodes"
+requires-python = ">=3.10"
