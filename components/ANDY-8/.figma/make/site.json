@@ -1,0 +1,14 @@
+{
+  "title": "ANDY 8 — Distributed Mesh Telemetry",
+  "description": "Explore ANDY 8, a fault-tolerant three-drone mesh network with telemetry monitoring, dynamic route recovery, and project documentation.",
+  "robots": {
+    "index": true
+  },
+  "openGraph": {
+    "image": "./og.png"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
