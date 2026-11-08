@@ -1,0 +1,5 @@
+[project]
+name = "andy8-mavlink-bridge"
+version = "0.1.0"
+description = "PX4 MAVLink to ANDY-8 mesh transport adapter"
+requires-python = ">=3.10"
