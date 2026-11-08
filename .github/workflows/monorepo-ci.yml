@@ -1,0 +1,42 @@
+name: ANDY-8 Monorepo CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python-components:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run component unit tests
+        run: ./scripts/test-all.sh --python-only
+
+  website:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: components/ANDY-8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: components/ANDY-8/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test -- --run
+      - run: pnpm build --base=/ANDY-8/
