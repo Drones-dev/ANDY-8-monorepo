@@ -8,7 +8,11 @@ fi
 
 failures=0
 for component in components/*; do
+  python_tests=""
   if [[ -d "$component/tests" ]]; then
+    python_tests="$(find "$component/tests" -type f -name '*.py' -print -quit)"
+  fi
+  if [[ -n "$python_tests" && -f "$component/pyproject.toml" ]]; then
     echo "==> $component"
     if ! (cd "$component" && python3 -m unittest discover -s tests -v); then
       failures=$((failures + 1))
