@@ -1,0 +1,5 @@
+[project]
+name = "andy8-sitl-integration"
+version = "0.1.0"
+description = "PX4 SITL launch and telemetry integration helpers"
+requires-python = ">=3.10"
