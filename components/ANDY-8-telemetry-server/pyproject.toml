@@ -1,0 +1,5 @@
+[project]
+name = "andy8-telemetry-server"
+version = "0.1.0"
+description = "In-memory telemetry API for ANDY-8 development"
+requires-python = ">=3.10"
