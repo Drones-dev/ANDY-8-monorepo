@@ -1,0 +1,5 @@
+[project]
+name = "andy8-data-analysis"
+version = "0.1.0"
+description = "Offline ANDY-8 performance analysis"
+requires-python = ">=3.10"
