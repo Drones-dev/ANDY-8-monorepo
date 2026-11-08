@@ -1,0 +1,5 @@
+[project]
+name = "andy8-simulation"
+version = "0.1.0"
+description = "Deterministic ANDY-8 mesh simulation"
+requires-python = ">=3.10"
