@@ -1,0 +1,5 @@
+[project]
+name = "andy8-deployment"
+version = "0.1.0"
+description = "Release metadata and deployment validation for ANDY-8"
+requires-python = ">=3.10"
